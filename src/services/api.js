@@ -22,7 +22,7 @@ const refreshToken = async () => {
   if (!tokens?.refresh) return null;
 
   try {
-    const response = await axios.post(`${API_BASE_URL}api/token/refresh/`, {
+    const response = await axios.post(`${API_BASE_URL}/token/refresh/`, {
       refresh: tokens.refresh,
     });
 
